@@ -49,6 +49,7 @@ After cypress UI is open, click on the GoCity.Js to run the test case
 
 
 Improvements:
+---------------
 1. Happy path of the Payment process, which can be done connecting to Braintree test setup and using test credit card and paypal details.
 2. Test scenarios can be seperated out for various pages and actions
 3. Tests data parametrisation for testing various passes etc
