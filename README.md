@@ -37,7 +37,7 @@ Set chromeWebSecurity to false in your configuration file (cypress.json by defau
 
 Copy Test case file
 ----------------------
-Copy the gocity.js under /path-cypress-install/cypress/integration - This is where Cypress is installed.
+Copy the GoCity.js under /path-cypress-install/cypress/integration - This is where Cypress is installed.
 
 
 Opening Cypress
