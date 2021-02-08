@@ -4,7 +4,7 @@
 
 context('All Inclusive Pass Purchase Journey', () => {
 
-  it('Verify customer is able to add to cart', () => {
+  it('Verify customer is purchase 3 day passes with invalid Credit card', () => {
     cy.visit('https://gocity.com/boston/en-us/products/all-inclusive')
 
 
@@ -39,7 +39,7 @@ context('All Inclusive Pass Purchase Journey', () => {
       .eq(0).should('have.text', '3 day pass Adult All-Inclusive ') //add make it regex
     cy.get('.lc-cart__pass-product-name').eq(1).should('have.text', '3 day pass Child (3–12) All-Inclusive ')//add to make it regex
 
-    //Set data and checout
+    //Set date and checout
     cy.get('input[placeholder="MM-DD-YYYY"]').type('06-06-2021', { force: true }) //add assertion
     cy.get('.lc-cart__title').contains('Your Cart').click()
     cy.wait(2000) //Improve on wait, make it wait for a element
@@ -78,6 +78,7 @@ context('All Inclusive Pass Purchase Journey', () => {
     cy.wait(3000) //Improve on wait, make it wait for a element
     cy.get('span[data-testid="confirmOrderAndPay"]').eq(0).click({ force: true })
     cy.wait(3000) //Improve on wait, make it wait for a element
+    
     //verify error message on invalid card
     cy.get('.alert')
       .should('have.text', 'Unable to process the payment. Please verify the Card Details and try again.')
