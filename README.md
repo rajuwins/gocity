@@ -24,7 +24,7 @@ If you’re not using Node or npm, you can  download Cypress directly from htt
 
 Prerequisite
 ---------------
-
+This was needed for Braintree frames(there is scope of improvement not to do this)
 Set chromeWebSecurity to false in your configuration file (cypress.json by default)`
 {
   "chromeWebSecurity": false
@@ -40,6 +40,10 @@ Copy the gocity.js under /Users/rla02/cypress/integration
 Opening Cypress
 ----------------
 ./node_modules/.bin/cypress open
+
+Running Test cases
+--------------------
+After cypress UI is open, click on the GoCity.Js to run the test case
 
 
 
