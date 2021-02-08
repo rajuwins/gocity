@@ -48,7 +48,8 @@ context('All Inclusive Pass Purchase Journey', () => {
 
     //Payment Page
     cy.wait(2000) //Improve on wait, make it wait for a element
-    cy.get('button').contains('Agree').click()
+    cy.get('input[id=checkout-form-email]').type('customerservice@smartdestinations.com',{ force: true })
+    cy.wait(3000)
     cy.get('#braintree-hosted-field-number').then($element => {
 
       const $body = $element.contents().find('body')
@@ -77,6 +78,7 @@ context('All Inclusive Pass Purchase Journey', () => {
     cy.wait(3000) //Improve on wait, make it wait for a element
     cy.get('span[data-testid="confirmOrderAndPay"]').eq(0).click({ force: true })
     cy.wait(3000) //Improve on wait, make it wait for a element
+    //verify error message on invalid card
     cy.get('.alert')
       .should('have.text', 'Unable to process the payment. Please verify the Card Details and try again.')
 
