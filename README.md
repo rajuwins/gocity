@@ -10,7 +10,7 @@ cd /your/project/path
 
 npm install cypress --save-dev
 
-Make sure that you have already run npm init or have a node_modules folder or package.json file in the root of your project to ensure cypress is installed in the correct directory.
+Make sure that that have already run npm init or have a node_modules folder or package.json file in the root of your project to ensure cypress is installed in the correct directory.
 
 Installing Cypress via yarn
 -------------------
@@ -25,8 +25,10 @@ If you’re not using Node or npm, you can  download Cypress directly from htt
 
 Prerequisite
 ---------------
-This was needed for Braintree frames(there is scope of improvement not to do this)
-Set chromeWebSecurity to false in your configuration file (cypress.json by default)`
+This was needed for Braintree frames(there is scope to improve not to do this).
+
+Set chromeWebSecurity to false in your configuration file (cypress.json by default)
+
 {
   "chromeWebSecurity": false
 }
@@ -35,7 +37,7 @@ Set chromeWebSecurity to false in your configuration file (cypress.json by defau
 
 Copy Test case file
 ----------------------
-Copy the gocity.js under /Users/user-id/cypress/integration - This is where you installed Cypress
+Copy the gocity.js under /path-cypress-install/cypress/integration - This is where Cypress is installed.
 
 
 Opening Cypress
