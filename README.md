@@ -7,6 +7,7 @@ Installation
 Install Cypress via npm:
 
 cd /your/project/path
+
 npm install cypress --save-dev
 
 Make sure that you have already run npm init or have a node_modules folder or package.json file in the root of your project to ensure cypress is installed in the correct directory.
@@ -34,7 +35,7 @@ Set chromeWebSecurity to false in your configuration file (cypress.json by defau
 
 Copy Test case file
 ----------------------
-Copy the gocity.js under /Users/rla02/cypress/integration
+Copy the gocity.js under /Users/user-id/cypress/integration - This is where you installed Cypress
 
 
 Opening Cypress
