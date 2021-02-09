@@ -4,7 +4,7 @@
 
 context('All Inclusive Pass Purchase Journey', () => {
 
-  it('Verify customer is purchase 3 day passes with invalid Credit card', () => {
+  it('Verify customer is able to purchase 3 day passes with invalid Credit card', () => {
     cy.visit('https://gocity.com/boston/en-us/products/all-inclusive')
 
 
